@@ -1,0 +1,38 @@
+.regForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 auto;
+}
+.regForm p {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    margin: 0 0 15px 0;
+    padding: 0;
+}
+
+.regForm p:last-of-type {
+    margin-bottom: 50px;
+}
+
+.regForm label {
+    font-size: 24px;
+    font-family: var(--main-text-font);
+}
+
+.regForm input {
+    margin-left: 15px;
+    height: 30px;
+    width: 15vw;
+}
+
+.passwordAgain {
+    font-size: 18px !important;
+}
+
+.regForm button {
+    font-size: 18px;
+    padding: 0 25px 5px 25px;
+}

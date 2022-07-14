@@ -1,0 +1,45 @@
+:root {
+  --main-bg-color: #fff;
+  --main-text-color: #252526;
+  --logo-color: #4957ED;
+  --second-color: #EE2935;
+  --third-color: #419538;
+
+  --logo-font: 'Oswald', sans-serif;
+  --main-text-font: 'Inter', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+ 
+
+#root {
+  height: 100vh;
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.chartButtons {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.footer {
+  font-size: 24px;
+  font-family: var(--logo-font);
+  text-align: center;
+  padding: 50px 0;
+}
