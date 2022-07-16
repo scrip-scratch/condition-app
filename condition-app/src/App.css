@@ -37,9 +37,11 @@ body {
   flex-direction: row-reverse;
 }
 
+
 .footer {
   font-size: 24px;
   font-family: var(--logo-font);
   text-align: center;
   padding: 50px 0;
 }
+

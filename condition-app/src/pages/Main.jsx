@@ -78,7 +78,6 @@ function Main() {
       <Modal visible={modal} setVisible={setModal}>
         <AddCondForm setVisible={setModal} />
       </Modal>
-      
     </div>
   )
 }

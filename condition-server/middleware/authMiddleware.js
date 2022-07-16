@@ -11,13 +11,13 @@ module.exports = function (req, res, next) {
             return res.status(403).json({messege: 'Пользователь не авторизован'});
         }
 
-        const decoded = jwt.verify(token, process.env.SECRET_KEY);
+        const decoded = jwt.verify(token, process.env.SECRET_KEY)
 
         req.user = decoded;
         
         next();
 
     } catch (e) {
-        res.status(403).json({messege: 'Пользователь не авторизован'});
+        res.status(401).json({messege: 'Ошибка!'});
     }
 }
