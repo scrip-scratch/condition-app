@@ -1,9 +1,9 @@
-import { Header } from "./Header";
+import Navbar from "./UI/Navbar/Navbar";
 
 export const Layout = ({ children }: { children: JSX.Element }) => {
   return (
     <>
-      <Header />
+      <Navbar />
       <main>{children}</main>
     </>
   );

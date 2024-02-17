@@ -1,42 +1,45 @@
 .aboutPage {
-    padding: 0 10%;
-    flex: 1 1 auto;
+  padding: 5% 10%;
+  flex: 1 1 auto;
 }
 
 .aboutPage h2 {
-    font-family: var(--main-text-font);
-    font-size: 24px;
-    text-align: center;
+  font-family: var(--main-text-font);
+  font-size: 24px;
+  text-align: center;
+  font-weight: 400;
 }
 
 .aboutPage h2 span {
-    font-family: var(--logo-font);
-    color: var(--logo-color);
+  font-family: var(--logo-font);
+  color: var(--logo-color);
 }
 
 .spanCondition {
-    font-family: var(--logo-font);
-    color: var(--logo-color);
+  font-family: var(--logo-font);
+  color: var(--logo-color);
 }
 
 .aboutPage p {
-    font-family: var(--main-text-font);
-    font-size: 18px;
+  font-family: var(--main-text-font);
+  font-size: 18px;
 }
 
-.phys, .emo, .soul {
-    font-family: var(--logo-font);
-    font-size: 24px;
+.phys,
+.emo,
+.soul {
+  font-family: var(--logo-font);
+  font-size: 24px;
 }
 
 .phys {
-    color: var(--second-color);
+  color: var(--second-color);
 }
 
 .emo {
-    color: var(--logo-color);
+  color: var(--logo-color);
 }
 
 .soul {
-    color: var(--third-color);
+  color: var(--third-color);
 }

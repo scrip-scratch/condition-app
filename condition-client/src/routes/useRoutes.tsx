@@ -1,20 +1,17 @@
 import { Route, Routes } from "react-router-dom";
 import { PrivateRoute } from "./PrivateRoute";
 import { Main } from "../pages/Main";
-import { Music } from "../pages/Music";
-import { Admin } from "../pages/Admin";
 import { Login } from "../pages/Login";
+import About from "../pages/About";
 
 export const useRoutes = () => {
   return (
     <Routes>
-      <Route path="/login" element={<Login />} />
-      <Route path="/music" element={<Music />} />
+      {/* <Route path="/login" element={<Login />} />      */}
       <Route index element={<Main />} />
+      <Route path="/about" element={<About />} />
 
-      <Route element={<PrivateRoute />}>
-        <Route path="/admin" element={<Admin />} />
-      </Route>
+      <Route element={<PrivateRoute />}></Route>
     </Routes>
   );
 };
