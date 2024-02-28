@@ -1,5 +1,5 @@
 import { useState, useContext } from "react";
-import classes from "./Auth.module.css";
+import classes from "./LoginForm.module.css";
 import { useNavigate } from "react-router-dom";
 
 function LoginForm() {
@@ -28,7 +28,7 @@ function LoginForm() {
         Войти
       </button>
       <p>
-        Нет аккаунта? <a href={"/"}>Зарегистрируйтесь</a>
+        Нет аккаунта? <a href={"/reg"}>Зарегистрируйтесь</a>
       </p>
     </form>
   );

@@ -23,11 +23,21 @@ body {
   flex-direction: column;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 #root {
-  height: 100vh;
-  width: 80vw;
+  width: 100%;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 .chartButtons {
@@ -43,21 +53,21 @@ body {
 }
 
 .button {
-  width: 184px;
-  height: 68px;
-  padding: 0 50px 5px 50px;
+  height: 50px;
+  padding: 0 24px;
   color: #fff;
-  font-size: 24px;
-  line-height: 26px;
+  font-size: 16px;
   font-family: var(--logo-font);
   border: none;
+  border-radius: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 20px;
+  text-transform: uppercase;
+  cursor: pointer;
 }
 
 .button--main {
-  background: var(--logo-color);
+  background: var(--third-color);
   color: #fff;
 }
