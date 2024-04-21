@@ -4,7 +4,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 30%;
+  margin-top: 64px;
 }
 
 .enterForm h3 {
@@ -12,14 +12,24 @@
   font-family: var(--main-text-font);
   font-weight: 400;
   margin-bottom: 16px;
+  color: var(--logo-color);
 }
 
 .enterForm input {
   font-size: 16px;
-  padding: 8px;
+  padding: 12px;
   font-family: var(--main-text-font);
   width: 85%;
   margin: 8px 0;
+  background: var(--background-color);
+  border: 1px solid var(--text-color);
+  outline: none;
+  color: var(--logo-color);
+}
+
+.enterForm input::placeholder {
+  color: var(--text-color);
+  opacity: 0.75;
 }
 
 .enterForm input:last-of-type {
@@ -29,7 +39,8 @@
 .enterForm p {
   font-size: 16px;
   font-family: var(--main-text-font);
-  margin: 40% 0 0;
+  color: var(--text-color);
+  margin: 36px 0 0;
 }
 
 .enterForm p a {

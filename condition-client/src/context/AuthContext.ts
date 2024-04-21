@@ -8,13 +8,13 @@ export enum Role {
 }
 
 type AuthContextType = {
-  isAuthenticated: boolean;
+  isAuth: boolean;
   setAuth: (auth: boolean) => void;
   login: (params: LoginRequest) => Promise<any>;
 };
 
 export const AuthContext = createContext<AuthContextType>({
-  isAuthenticated: false,
+  isAuth: false,
   setAuth: () => {},
   login: () => Promise.resolve(),
 });

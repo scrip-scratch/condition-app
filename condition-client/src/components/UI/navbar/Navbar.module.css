@@ -4,19 +4,19 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: var(--logo-color);
+  /* background-color: var(--logo-color); */
 }
 
 .navbar__logo {
   text-decoration: none;
   font-family: var(--logo-font);
   font-size: 16px;
-  color: var(--main-bg-color);
+  color: var(--logo-color);
 }
 
 .link__about {
   text-decoration: none;
-  color: var(--main-bg-color);
-  font-size: 16px;
   font-family: var(--main-text-font);
+  font-size: 16px;
+  color: var(--logo-color);
 }

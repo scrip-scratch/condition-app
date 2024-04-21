@@ -1,16 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
 :root {
-  --main-bg-color: #fff;
-  --main-text-color: #252526;
-  --logo-color: #4957ed;
-  --second-color: #ee2935;
-  --third-color: #419538;
+  /* light theme */
+  --background-primary-light: #eee;
+  --text-primary-light: #252526;
+  --logo-primary-light: #4957ed;
+  --second-primary-light: #ee2935;
+  --third-primary-light: #419538;
+
+  /* dark theme */
+  --background-primary-dark: #333333;
+  --text-primary-dark: #eee;
+  --logo-primary-dark: #b5baf3;
+  --second-primary-dark: #ee2935;
+  --third-primary-dark: #419538;
 
   --logo-font: "Oswald", sans-serif;
   --main-text-font: "Inter", sans-serif;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+[data-theme="light"] {
+  --background-color: var(--background-primary-light);
+  --text-color: var(--text-primary-light);
+  --logo-color: var(--logo-primary-light);
+  --second-color: var(--second-primary-light);
+  --third-color: var(--third-primary-light);
+}
+
+[data-theme="dark"] {
+  --background-color: var(--background-primary-dark);
+  --text-color: var(--text-primary-dark);
+  --logo-color: var(--logo-primary-dark);
+  --second-color: var(--second-primary-dark);
+  --third-color: var(--third-primary-dark);
+}
 
 body {
   margin: 0 auto;
@@ -21,6 +45,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background: var(--background-color);
 }
 
 * {
